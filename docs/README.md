@@ -30,7 +30,7 @@ export default defineUserConfig({
 
 ```js:no-v-pre
 // 由于 JS 代码高亮，这里不会被正确编译
-const onePlusTwoPlusThree = {{ 1 + 2 + 3 }}
+const onePlusTwoPlusThree = {{ 1 + 2 + 3 + 4 }}
 ```
 <!-- 最简单的语法 -->
 <!-- @[code md](/images/name.png) -->
