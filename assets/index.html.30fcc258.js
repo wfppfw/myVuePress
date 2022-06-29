@@ -1,0 +1,1 @@
+const a={key:"v-34586b2c",path:"/tags/docusaurus/",title:"Docusaurus | Tags",lang:"zh-CN",frontmatter:{title:"Docusaurus | Tags",layout:"Tags",blog:{type:"category",name:"Docusaurus",key:"tag"}},excerpt:"",headers:[],git:{},filePathRelative:null,bar:"bar"};export{a as data};
