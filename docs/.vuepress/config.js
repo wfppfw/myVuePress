@@ -17,6 +17,7 @@ module.exports = {
   description: '这是我的练习一个 VuePress 站点',
   base: '/myVuePress/',
   plugins:[
+    
    [ registerComponentsPlugin({
       // 注册该文件下的vue文件为全局
       componentsDir: path.resolve(__dirname, './components'),
@@ -66,37 +67,6 @@ module.exports = {
       // <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
 
   ],
-  // themeConfig: {
-  //   // logo: 'https://vuejs.org/images/logo.png',
-  //   navbar: [
-  //     {
-  //       text: '首页',
-  //       link: '/',
-  //     },
-  //   ],
-  // },
-  // theme: "../../yur/index.js",
-  // themeConfig: {
-  //   a: 1,
-  // },
-
-  // theme: defaultTheme({
-    
-  //   // 默认主题配置
-  //   navbar: [
-  //     {
-  //       text: '首页',
-  //       link: '/',
-  //     },
-  //   ],
-  // }),
-
-
-  // theme: 'melodydl',
-  // themeConfig: {
-  //   // Please head documentation to see the available options.
-  // }
-
  
   theme: gungnirTheme({
     // 添加鼠标样式
