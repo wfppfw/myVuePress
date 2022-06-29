@@ -47,9 +47,9 @@ module.exports = {
     // ['vuepress-plugin-pixi-live2d-display', { model: "https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-z16/assets/z16.model.json" }]
   ],
   head:[
-    ['link',{rel:'icon',href:'../images/logo/favicon.ico'}],
+    ['link',{rel:'icon',href:'/images/logo/favicon.ico'}],
       ["meta", { name: "application-name", content: "Gungnir Theme" }],
-      ["link", { rel: "manifest", href: "../images/manifest.webmanifest" }],
+      ["link", { rel: "manifest", href: "/images/manifest.webmanifest" }],
       ["meta", { name: "application-name", content: "Gungnir Theme" }],
       ["meta", { name: "apple-mobile-web-app-title", content: "Gungnir Theme" }],
       [
@@ -127,7 +127,7 @@ module.exports = {
       name: "Moon",
 
       // 必须：头像，将在首页和移动端侧边栏显示
-      avatar: "../images/head.jpeg",
+      avatar: "/images/head.jpeg",
 
       // 必须：个人简介，将在首页显示
       description: "孤独は一人のもの,noʎ ʇnq ǝʌol ɹǝɥʇo NO",
@@ -158,21 +158,21 @@ module.exports = {
       [
         // 图 1
         {
-          "path": "../images/home-bg/1.jpg",
+          "path": "/images/home-bg/1.jpg",
           "mask": "rgba(40, 57, 101, .4)"
         },
         // 图 2
         {
-          "path": "../images/home-bg/2.jpg",
+          "path": "/images/home-bg/2.jpg",
           "mask": "rgb(251, 170, 152, .2)"
         },
         {
-          "path": "../images/home-bg/3.jpg",
+          "path": "/images/home-bg/3.jpg",
           "mask": "rgba(40, 57, 101, .4)"
         },
         
         {
-          "path": "../images/home-bg/4.jpg",
+          "path": "/images/home-bg/4.jpg",
           "mask": "rgba(40, 57, 101, .4)"
         },
 
@@ -189,7 +189,7 @@ module.exports = {
          //// 可选：标签页副标题
         subtitle: "Black Sheep Wall",
         bgImage: {
-          path: "../images/pages/tags.png",
+          path: "/images/pages/tags.png",
           mask: "rgba(211, 136, 37, .5)"
         }
       },
@@ -197,7 +197,7 @@ module.exports = {
         subtitle:
           "When you are looking at the stars, please put the brightest star shining night sky as my soul.",
         bgImage: {
-          path: "../images/pages/links.jpg",
+          path: "/images/pages/links.jpg",
           mask: "rgba(64, 118, 190, 0.5)"
         }
       }
