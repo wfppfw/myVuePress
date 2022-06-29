@@ -1,0 +1,101 @@
+@import '@vuepress/plugin-palette/palette';
+
+
+// cursor icon Base64
+$curHover: url("data:image/png;base64,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") 11 0, auto !important;
+$curDefault: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA5hJREFUWEfFl21oU1cYx//33HvzWoOaxjI3HFMcvn4RN4mfdBOGyNBNnH6b+PZBP3VD90E3B3YbY1pRGAw6u4EgCApujHT9MoYvTBF0LVac1GhttNbzNCO1rSZt7jPOTe9pg11ba5MeCLm5JPf3O+f5n5cYsVjsLyllHFPUjFgsxsz8LxHNnAoHV8ADSykFAP25HEJFAgqYy+XmZTKZZDngiqEFmBmGYbhcZt5FRHXlkNACpz+7iQ9r5sO2bU/iVyJaX2oJLfBzdRLhQADvHahAJBzxuB1SytmllCgScBiwhMCO2qXI4YnmSikLtSlBKxZwgNg8Eyu2BLFx605cSPyi8uBmg5lfJaKHk+1QJDA37sOCVT6cTgLXCXjQdA6N+3d5mYDjOJvS6fSZyZTQAk0X2/DKm0HU3gAePx1CCKsDP7y7GJZleTd/klJumywJLdDensLBZt+Izw3OAA4vDSA4LeKV5J6U8o3JkNACHydSMHlkAQXqt4Cz6+eg79kzXRIieulwaoHtDSmwM7LAk37g+5WF/sYXvY87dEV3PpvNRru7u9MTHY0xBfoGgONxgB3GuS97YPmBy7dOoa7xc81k5tVE9OdEJEYVUCvzN8uBbC+j8UgPhGkAatAZGMh3Ytuxt2AK05umR4nokxeVMCorK1nN8+2/p8D5oRJUBYHqJUDmUR7nTzyF4ZEVYVAiEvZh3RczEQyE3HACuEVEC19EYkhgWAaWRYGP5gLtzf1o+i1bvEEPwj1IwG9i06E5sP16I8sRkX+8Es+V4IPXgRWzgOZEFvf/zqGuYR9a2i7BEjZMYcMyfe61ZflgmYV32/bjWmsDLFOvFRBCVHR2dvaOJVIksGeBD6+FgQv1fcg8cpDpTaK6bs1Yz9DT0tvOh/1gmZTy+mgP0AK321KYHvQh8W0PnAEgEvJjw6EqmKYbsnpmvjxYfcHMhhBCnZ7Uy2Bm9W4ysymEMNV9da3uGYZxUkrZ+n8SRSth4qss7ICKm4HNX1chFHLD1UJES8Y1DBP4khb4cXcSwi7krfbsVrSkziv4ABEVTiglas+dB7q6/8He+rUurpTnAK8/RQIVAT821FS5aR5vil92YLz/BTj56V1srJmFcKgC+Xw+nk6nVehK3rTA/Nlvo7Xjqqr7d0S0r+TkQYC7Eg6D3SSixeWCu6u6txeUI/EjdUyHsByJH01gmpSyp5xDr6dhNBp9p6ur64+pgCvmf96hrTAtMldgAAAAAElFTkSuQmCC") 0 0 , auto;
+// responsive breakpoints
+$MQLarge: 1200px !default;
+$MQIpad: 1023px !default;
+$MQNarrow: 959px !default;
+$MQMobile: 719px !default;
+$MQMobileNarrow: 419px !default;
+
+// code languages
+$codeLang: 'c' 'cpp' 'cs' 'css' 'dart' 'docker' 'fs' 'go' 'html' 'java' 'js'
+  'json' 'kt' 'less' 'makefile' 'md' 'php' 'py' 'rb' 'rs' 'sass' 'scss' 'sh'
+  'styl' 'ts' 'toml' 'vue' 'yml' !default;
+
+// base colors
+$darkColor10: rgba(27, 35, 47, 1);
+$darkColor9: rgba(27, 35, 47, .9);
+$darkColor8: rgba(27, 35, 47, .8);
+$darkColor7: rgba(27, 35, 47, .7);
+$darkColor6: rgba(27, 35, 47, .6);
+$darkColor5: rgba(27, 35, 47, .5);
+$darkColor4: rgba(27, 35, 47, .4);
+$darkColor3: rgba(27, 35, 47, .3);
+$darkColor2: rgba(27, 35, 47, .2);
+$darkColor1: rgba(27, 35, 47, .1);
+
+$lightColor10: rgba(255, 255, 255, 1);
+$lightColor9: rgba(255, 255, 255, .9);
+$lightColor8: rgba(255, 255, 255, .8);
+$lightColor7: rgba(255, 255, 255, .7);
+$lightColor6: rgba(255, 255, 255, .6);
+$lightColor5: rgba(255, 255, 255, .5);
+$lightColor4: rgba(255, 255, 255, .4);
+$lightColor3: rgba(255, 255, 255, .3);
+$lightColor2: rgba(255, 255, 255, .2);
+$lightColor1: rgba(255, 255, 255, .1);
+
+
+// code colors
+$codeBgColor: #2d2d2d !default;
+$codeHighlightBgColor: rgba(0, 0, 0, 66%) !default;
+
+$codeColor: rgba(27, 31, 35, 0.05) !default;
+$codeColorDark: $darkColor3 !default;
+
+$inlineCodeText: #c52950 !default;
+$inlineCodeTextDark: #96c2eb !default;
+$inlineCodeBg: #f9f2f4 !default;
+$inlineCodeBgDark: rgba(76, 86, 128, 0.4) !default;
+
+// shadow colors
+$boxShadow: 0 1px 8px 0 $darkColor1 !default;
+$boxShadowHover: 0 2px 16px 0 $darkColor2 !default;
+$boxShadowDark: 0 1px 8px 0 $darkColor6 !default;
+$boxShadowHoverDark: 0 2px 16px 0 $darkColor7 !default;
+$boxShadowInset: inset 2px 2px 4px #bab6b6, inset -1px -1px 4px $lightColor6 !default;
+$boxShadowInsetDark: inset 2px 2px 4px $darkColor9, inset -1px -1px 4px $lightColor2 !default;
+
+// text colors
+$textColor: rgba(0, 0, 0, .9) !default;
+$textColorDark: $lightColor8 !default;
+
+$textColorSub: #7f7f7f !default;
+$textColorSubDark: #8b8b8b !default;
+
+// background colors
+$bgColor: #fff !default;
+$bgColorDark: #2d3746 !default;
+$bgColorLight: #fafafa !default;
+$bgColorLightDark: #313d4e !default;
+$bgColorLighter: #f6f6f6 !default;
+$bgColorLighterDark: #404d61 !default;
+$bgColorTransparent: rgba(255, 255, 255, .9) !default;
+$bgColorTransparentDark: rgb(45, 55, 71, .9) !default;
+
+// border colors
+$borderColor: #eaeaea !default;
+$borderColorDark: #3c4a5f !default;
+$borderColorSub: #dadada !default;
+$borderColorSubDark: #4b5a70 !default;
+
+// mask colors
+$maskColor: #888 !default;
+$maskColorDark: #000 !default;
+
+// theme primary colors
+$brandColor: #377bb5 !default;
+$brandColorDark: #74b3eb !default;
+
+// Container colors
+$infoColor: #007bff !default;
+$tipColor: #42b983 !default;
+$tipTitleColor: #{darken(#42b983, 10%)} !default;
+$warningColor: #f4cd00 !default;
+$warningTitleColor: #{darken(#f4cd00, 10%)} !default;
+$dangerColor: #f55 !default;
+$dangerTitleColor: #{darken(#f55, 10%)} !default;
