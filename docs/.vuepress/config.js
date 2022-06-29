@@ -47,9 +47,9 @@ module.exports = {
     // ['vuepress-plugin-pixi-live2d-display', { model: "https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-z16/assets/z16.model.json" }]
   ],
   head:[
-    ['link',{rel:'icon',href:'/images/logo/favicon.ico'}],
+    ['link',{rel:'icon',href:'/myVuePress/images/logo/favicon.ico'}],
       ["meta", { name: "application-name", content: "Gungnir Theme" }],
-      ["link", { rel: "manifest", href: "/images/manifest.webmanifest" }],
+      ["link", { rel: "manifest", href: "/myVuePress/images/manifest.webmanifest" }],
       ["meta", { name: "application-name", content: "Gungnir Theme" }],
       ["meta", { name: "apple-mobile-web-app-title", content: "Gungnir Theme" }],
       [
