@@ -6,11 +6,11 @@ const { gungnirTheme } = require("../../theme");
 // import { defineUserConfig } from 'vuepress'
 // 注册为全局vue组件插件
 
-// const { registerComponentsPlugin } = require('@vuepress/plugin-register-components');
-// const { nprogressPlugin } = require('@vuepress/plugin-nprogress');
-// const { mediumZoomPlugin } = require('@vuepress/plugin-medium-zoom')
-// const { backToTopPlugin } = require('./plugins/plugin-back-to-top/lib/node/index');
-// const { fireworksPlugin } = require('./plugins/plugin-fireworks/lib/node/index');
+const { registerComponentsPlugin } = require('@vuepress/plugin-register-components');
+const { nprogressPlugin } = require('@vuepress/plugin-nprogress');
+const { mediumZoomPlugin } = require('@vuepress/plugin-medium-zoom')
+const { backToTopPlugin } = require('./plugins/plugin-back-to-top/lib/node/index');
+const { fireworksPlugin } = require('./plugins/plugin-fireworks/lib/node/index');
 module.exports = {
   lang: 'zh-CN',
   title: 'Moon\'s Blog',
@@ -18,17 +18,17 @@ module.exports = {
   base: '/myVuePress/',
   plugins:[
 
-  //  [ registerComponentsPlugin({
-  //     // 注册该文件下的vue文件为全局
-  //     componentsDir: path.resolve(__dirname, './components'),
-  //   })],
-  //   ['vuepress-plugin-code-copy', true],
-  //   nprogressPlugin(),
-  //   mediumZoomPlugin({
-  //     // 配置项
-  //   }),
+   [ registerComponentsPlugin({
+      // 注册该文件下的vue文件为全局
+      componentsDir: path.resolve(__dirname, './components'),
+    })],
+    ['vuepress-plugin-code-copy', true],
+    nprogressPlugin(),
+    mediumZoomPlugin({
+      // 配置项
+    }),
 
-  //   fireworksPlugin(),
+    fireworksPlugin(),
 
 
   
