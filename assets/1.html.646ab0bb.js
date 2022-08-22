@@ -1,0 +1,1 @@
+const e={key:"v-1ff3cb81",path:"/1.html",title:"Hello VuePress",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1654701707e3},readingTime:{minutes:1,words:2},filePathRelative:"1.md",bar:"bar"};export{e as data};

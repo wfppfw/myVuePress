@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as o}from"./app.ea06ade8.js";const r={data(){return{dynamicComponent:null}}},n={id:"vditor",style:{width:"100px",height:"100px"}};function a(c,d,s,i,_,p){return t(),o("div",n," hello,vditor! ")}var m=e(r,[["render",a],["__file","demo.vue"]]);export{m as default};
